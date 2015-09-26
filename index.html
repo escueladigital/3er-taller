@@ -7,51 +7,73 @@
     <title></title>
   </head>
   <body>
-    <header>
+    <header id="header">
+      <!--
+      Created by Álvaro on 26/9/2015.
+      
+      -->
       <div class="ed-container">
-        <div class="ed-item web-20"><img src="img/logo.png" class="logo"/></div>
-        <div class="ed-item web-80 main-end cross-center">Versión 1.2</div>
-      </div>
-    </header>
-    <nav>
-      <div class="ed-container">
-        <div class="ed-item">
-          <ul class="ed-menu nav-bar web-horizontal">
-            <li><a href="#">Item 1</a>
-              <ul>
-                <li><a href="#">Subitem 1</a></li>
-                <li><a href="#">Subitem 2</a></li>
-                <li><a href="#">Subitem 3</a>
-                  <ul>
-                    <li><a href="#">Sub-item 1</a></li>
-                    <li><a href="#">Sub-item 2</a></li>
-                    <li><a href="#">Sub-item 3</a></li>
-                    <li><a href="#">Sub-item 4</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Subitem 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Item 2</a></li>
-            <li><a href="#">Item 3</a></li>
-            <li><a href="#">Item 4</a></li>
-            <li><a href="#">Item 5</a></li>
-            <li><a href="#">Item 6</a></li>
-            <li><a href="#">Item 7</a></li>
+        <div class="ed-item web-30">
+          <div class="logo">ED TALLER</div>
+        </div>
+        <div class="ed-item web-70">
+          <!--Created by Álvaro on 26/9/2015.
+          -->
+          <ul class="ed-menu web-horizontal">
+            <li><a href="#">home</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">pricing</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">contact</a></li>
           </ul>
         </div>
       </div>
-    </nav>
-    <div class="ed-container">
-      <div class="ed-item web-75">
-        <h2>¿Qué es ED GRID</h2>
-        <p>ED GRID es un framework para Responsive Web Design construido en español, con Sass y mucho café.</p>
-        <p>Con ED GRID puede crear layouts y prototipos responsive con mucha facilidad, con una metodología fácil de aprender.</p>
-        <p>ED GRID 1.2 viene con Flexbox. Adios a los floats</p>
-        <p>Esta versión incluye botones y menús desplegables.</p>
-        <p>Si solo desea ED GRID para incluirlo en un proyecto (y no toda la estructura de carpetas que ha descargado) copie la carpeta scss/ed-grid/ y listo</p><a class="button round">Este es un boton</a>
+      <!--Created by �lvaro on 26/9/2015.
+      -->
+      <div class="ed-container">
+        <div class="ed-item">
+          <div class="banner">
+            <h2 class="banner__title">Easy use</h2>
+            <h3 class="banner__subtitle">Responsive Theme</h3><a href="#" class="banner__button">See our portfolio</a>
+          </div>
+        </div>
       </div>
-      <div class="ed-item web-25 abcenter"><a href="http://escueladigital.pe" target="_blank">Escuela Digital</a></div>
-    </div>
+    </header>
+    <section id="services">
+      <!--Created by �lvaro on 26/9/2015.
+      -->
+      <div class="ed-container">
+        <div class="ed-item">
+          <h2 class="section__title">Services web provide</h2>
+          <p class="section__subtitle">A smart WordPress design team bla bla</p>
+        </div>
+        <div class="ed-item web-5 cross-center no-padding">
+          <div class="icon-izquierda"></div>
+        </div>
+        <div class="ed-item web-30">
+          <div class="service">
+            <h3 class="service__title">Fully Customizable</h3><img src="img/nube.png" class="service__img"/>
+            <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas feugiat dolor. Quisque eget eros quis neque egestas ultricies.</p>
+          </div>
+        </div>
+        <div class="ed-item web-30">
+          <div class="service">
+            <h3 class="service__title">Professional design</h3><img src="img/foco.png" class="service__img"/>
+            <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas feugiat dolor. Quisque eget eros quis neque egestas ultricies.</p>
+          </div>
+        </div>
+        <div class="ed-item web-30">
+          <div class="service">
+            <h3 class="service__title">HTML5 & CSS3</h3><img src="img/movil.png" class="service__img"/>
+            <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas feugiat dolor. Quisque eget eros quis neque egestas ultricies.</p>
+          </div>
+        </div>
+        <div class="ed-item web-5 cross-center no-padding">
+          <div class="icon-derecha"></div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

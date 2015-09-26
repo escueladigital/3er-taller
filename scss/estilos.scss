@@ -4,7 +4,7 @@
 
 // Font face. Incluya el import de Google Fonts o su regla font-face
 // Lo usual es una fuente para los textos y otra para los títulos
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
 
 // Variables para aplicarlas en font-weight
   $light      : 300;
@@ -14,23 +14,21 @@
   $extra-bold : 800;
 
 // PALETA DE COLOR, modifique para su propia paleta de color
-  $azul        : steelblue;
-  $azul-oscuro : #255484;
-  $azul-claro  : lighten(steelblue,25%);
-  $negro       : #070D12;
-  $blanco      : #FDFDFD;
-  $gris        : #ccc;
-  $gris-oscuro : #444;
-  $gris-claro  : #f0f0f0;
-  $rojo        : darken(tomato,10);
+  $amarillo: #FE9900;
+  $celeste: #44A5AC;
+  $azul: #334D68;
+  $rojo: #D44032;
+  $gris: #4C4C4C;
+  $negro: #000;
+  $blanco: #fff;
 
 // ESTILOS BASE
   $body--background  : #fff;                      // fondo para el body
-  $body--font-family : 'Open Sans', sans-serif;   // fuente predeterminada
+  $body--font-family : 'Roboto', sans-serif;   // fuente predeterminada
   $body--color       : #333;                      // color de texto predeterminado
 
 // ESTILOS DE ENCABEZADOS
-  $header--font-family    : 'Open Sans', sans-serif;  // fuente para los headers (h1,h2,h3...)
+  $header--font-family    : 'Roboto', sans-serif;  // fuente para los headers (h1,h2,h3...)
   $header--font-weight    : $bold;                    // grosor de fuente para los headers
   $header--text-transform : normal;                   // normal, uppercase, lowercase, capitalize
   $header--color          : #222;                     // color predeterminado de los header
@@ -67,6 +65,7 @@
   @import "tema/header";
   @import "tema/footer";
   @import "tema/main";
+  @import "tema/services";
 
 // Modulos. Los estilos propios construidos para el proyecto
   @import "modulos/modulos";

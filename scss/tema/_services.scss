@@ -1,0 +1,54 @@
+#services {
+  background: $amarillo;
+  transform: skewY(-2deg);
+  transform-origin: top left;
+  position: relative;
+  > .ed-container {
+    transform: skewY(2deg);
+    position: relative;
+    z-index: 10;
+  }
+  [class^="icon-"] {
+    color: #fff;
+    font-size: 1.5em;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 1.7em;
+    display:block;
+    height: 1.7em;
+    text-align: center;
+    line-height: 1.7em;
+  }
+  &:after {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $amarillo;
+    transform: skewY(4deg);
+    transform-origin: bottom left;
+  }
+}
+
+.service {
+  color: #fff;
+  text-align: center;
+  &__title {
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: $normal;
+  }
+
+  &__img {
+    width: 50%;
+    margin: 1em auto;
+  }
+
+  &__description {
+
+  }
+}

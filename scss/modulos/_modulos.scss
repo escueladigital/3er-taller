@@ -1,0 +1,12 @@
+.section__title {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  margin: 1em 0 0 0;
+  text-transform: uppercase;
+}
+.section__subtitle {
+  @extend .section__title;
+  font-size: .8em;
+  margin: 0 0 3em 0 !important;
+}
