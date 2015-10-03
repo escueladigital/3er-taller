@@ -1,15 +1,54 @@
-#header {
-  background: url(../img/girl1.jpg) center center / 110% fixed;
-  position: relative;
-  height: 35em;
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(#000,.2);
+.logo {
+  color: #fff;
+  font-weight: $bold;
+}
+
+.main-header {
+  background: rgba(#000, .8);
+  height: 2.5em;
+  line-height: 2.5em;
+  @include desde(web){
+    height: 3.5em;
+    line-height: 3.5em;
   }
 }
 
+.banner {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  &__copy {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    @include desde(web){
+      font-size: 2em;
+    }
+  }
+  
+  &__title {
+    text-transform: uppercase;
+  }
+  
+
+  &__title,
+  &__subtitle {
+    margin: 0;
+    color: #fff;
+    font-weight: $light;
+  }
+  &__subtitle {
+    font-size: 1em;
+    margin: .2em 0 .5em;
+  }
+
+  &__button {
+    @include button(rgba(lighten(red,10),.9),white)
+  }
+}

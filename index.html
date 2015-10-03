@@ -3,45 +3,54 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/estilos.css"/>
     <title></title>
   </head>
   <body>
     <header id="header">
-      <!--
-      Created by Álvaro on 26/9/2015.
-      
-      -->
-      <div class="ed-container">
-        <div class="ed-item web-30">
-          <div class="logo">ED TALLER</div>
-        </div>
-        <div class="ed-item web-70">
-          <!--Created by Álvaro on 26/9/2015.
-          -->
-          <ul class="ed-menu web-horizontal">
-            <li><a href="#">home</a></li>
-            <li><a href="#">our services</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">pricing</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">blog</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
+      <div class="main-header">
+        <!--
+        Created by Álvaro on 26/9/2015.
+        
+        -->
+        <div class="ed-container">
+          <div class="ed-item base-50 web-30">
+            <div class="logo">ED TALLER</div>
+          </div>
+          <div class="ed-item base-50 web-70 main-end">
+            <!--Created by Álvaro on 26/9/2015.
+            -->
+            <div class="icon-menu toggle-menu hasta-web"></div>
+            <ul class="ed-menu web-horizontal">
+              <li><a href="#">home</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">portfolio</a></li>
+              <li><a href="#">pricing</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <!--Created by �lvaro on 26/9/2015.
-      -->
-      <div class="ed-container">
-        <div class="ed-item">
-          <div class="banner">
-            <h2 class="banner__title">Easy use</h2>
-            <h3 class="banner__subtitle">Responsive Theme</h3><a href="#" class="banner__button">See our portfolio</a>
+      <div class="main-banner">
+        <!--Created by �lvaro on 26/9/2015.
+        -->
+        <div class="ed-container full">
+          <div class="ed-item no-padding">
+            <div class="banner oscurecer"><img src="img/girl1.jpg" class="banner__img"/>
+              <div class="banner__copy">
+                <h2 class="banner__title">Easy use</h2>
+                <h3 class="banner__subtitle">Responsive Theme</h3><a href="#" class="banner__button">See our portfolio</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
-    <section id="services">
+    <section id="services" class="diagonal diagonal--izquierda">
       <!--Created by �lvaro on 26/9/2015.
       -->
       <div class="ed-container">
@@ -73,6 +82,92 @@
         <div class="ed-item web-5 cross-center no-padding">
           <div class="icon-derecha"></div>
         </div>
+      </div>
+    </section>
+    <section>
+      <!--Created by �lvaro on 3/10/2015.
+      -->
+      <div class="division abcenter column oscurecer">
+        <div class="division__title">Original Portfolio</div>
+        <div class="division__subtitle">Preview of work, social buttons</div>
+      </div>
+    </section>
+    <section id="portfolio" class="diagonal diagonal--derecha">
+      <!--Created by �lvaro on 3/10/2015.
+      -->
+      <div class="ed-container">
+        <div class="ed-item">
+          <div class="section__title">Portfolio</div>
+          <div class="section__subtitle">Premium Portfolio Slider</div>
+        </div>
+        <div class="ed-item">
+          <nav class="links"><a href="#">Home</a><a href="#">Services</a><a href="#">Portfolio</a><a href="#">Pricing</a><a href="#">About</a><a href="#">Blog</a><a href="#">Contact</a></nav>
+        </div>
+        <div class="ed-item">
+          <div class="gallery">
+            <div class="gallery-item"><img src="img/girl1.jpg"/></div>
+            <div class="gallery-item"><img src="img/girl1.jpg"/></div>
+            <div class="gallery-item"><img src="img/girl1.jpg"/></div>
+            <div class="gallery-item"><img src="img/girl1.jpg"/></div>
+            <div class="gallery-item"><img src="img/girl1.jpg"/></div>
+            <div class="gallery-item"><img src="img/girl1.jpg"/></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!--Created by �lvaro on 3/10/2015.
+      -->
+      <div class="division abcenter column oscurecer">
+        <div class="division__title">Original Portfolio</div>
+        <div class="division__subtitle">Preview of work, social buttons</div>
+      </div>
+    </section>
+    <section id="pricing" class="diagonal diagonal--izquierda">
+      <!--Created by �lvaro on 3/10/2015.
+      -->
+      <div class="ed-container">
+        <div class="ed-item">
+          <div class="section__title">Our Price</div>
+          <div class="section__subtitle">Satisfaction guaranteed or your money back</div>
+        </div>
+        <div class="ed-item tablet-1-3">
+          <ul class="pricing-list">
+            <li class="pricing-list__title">Basic</li>
+            <li class="pricing-list__price">$5.00/mo</li>
+            <li class="pricing-list__feature">Free Setup</li>
+            <li class="pricing-list__feature">Unlimited bandwidth</li>
+            <li class="pricing-list__feature">20% Transaction fee</li>
+            <li class="pricing-list__feature">1gb storage</li>
+            <li class="pricing-list__feature">Unlimited concurrent domain</li>
+            <li class="pricing-list__buy icon-derecha espacio">Buy Now</li>
+          </ul>
+        </div>
+        <div class="ed-item tablet-1-3">
+          <ul class="pricing-list">
+            <li class="pricing-list__title">Basic</li>
+            <li class="pricing-list__price">$5.00/mo</li>
+            <li class="pricing-list__feature">Free Setup</li>
+            <li class="pricing-list__feature">Unlimited bandwidth</li>
+            <li class="pricing-list__feature">20% Transaction fee</li>
+            <li class="pricing-list__feature">1gb storage</li>
+            <li class="pricing-list__feature">Unlimited concurrent domain</li>
+            <li class="pricing-list__buy icon-derecha espacio">Buy Now</li>
+          </ul>
+        </div>
+        <div class="ed-item tablet-1-3">
+          <ul class="pricing-list">
+            <li class="pricing-list__title">Basic</li>
+            <li class="pricing-list__price">$5.00/mo</li>
+            <li class="pricing-list__feature">Free Setup</li>
+            <li class="pricing-list__feature">Unlimited bandwidth</li>
+            <li class="pricing-list__feature">20% Transaction fee</li>
+            <li class="pricing-list__feature">1gb storage</li>
+            <li class="pricing-list__feature">Unlimited concurrent domain</li>
+            <li class="pricing-list__buy icon-derecha espacio">Buy Now</li>
+          </ul>
+        </div>
+        <div class="ed-item"></div>
       </div>
     </section>
   </body>

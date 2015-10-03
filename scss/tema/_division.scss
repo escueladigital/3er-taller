@@ -1,0 +1,19 @@
+.division {
+  height: 10em;
+  background: url(../img/girl2.jpg) center center / contain fixed;
+  color: #fff;
+  @include desde(tablet){
+    height: 20em;
+  }
+  &__title,
+  &__subtitle {
+    z-index: 50;
+  }
+  &__title {
+    font-size: 2em; 
+  }
+
+  &__subtitle {
+    font-size: 1.1em;
+  }
+}

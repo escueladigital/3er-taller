@@ -1,7 +1,33 @@
+.toggle-menu {
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+}
 .ed-menu {
+  @include hasta(web){
+    position: fixed;
+    top: 2.5em;
+    right: -80%;
+    background: rgba(#000,.9);
+    width: 80%;
+    height: 100vh;
+    z-index: 900;
+    transition: all .3s;
+    &.mostrar {
+      right: 0;
+    }
+  }
   li {
+    border-bottom: 1px solid rgba(#fff, .1);
+    @include desde(web){
+      border-bottom: none;
+    }
   }
   a {
-    
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: $light;
   }
 }

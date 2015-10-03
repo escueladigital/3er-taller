@@ -10,3 +10,63 @@
   font-size: .8em;
   margin: 0 0 3em 0 !important;
 }
+
+
+.oscurecer {
+  position: relative;
+  &:after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(#000,.4);
+    position: absolute;
+  }
+}
+
+
+.diagonal {
+  position: relative;
+  z-index: 30;
+  > .ed-container {
+    position: relative;
+    z-index: 10;
+  }
+  &--derecha {
+    transform: skewY(2deg);
+    transform-origin: top right;
+    > .ed-container {
+      transform: skewY(-2deg);
+    }
+  }
+  &--izquierda {
+    transform: skewY(-2deg);
+    transform-origin: top left;
+    > .ed-container {
+      transform: skewY(2deg);
+    }
+  }
+  &--izquierda:after {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $amarillo;
+    transform: skewY(4deg);
+    transform-origin: bottom left;
+  }
+  &--derecha:after {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $amarillo;
+    transform: skewY(-4deg);
+    transform-origin: bottom right;
+  }
+}

@@ -1,0 +1,37 @@
+#pricing {
+  &,
+  &:after {
+    background: $azul;
+  }
+}
+
+.pricing-list {
+  list-style: none;
+  padding-left: 0;
+  background: rgba(#000, .1);
+  color: #fff;
+  font-weight: $light;
+  text-transform: uppercase;
+  li {
+    text-align: center;
+    border-bottom: 1px solid rgba(#000,.1);
+  }
+  &__title {
+    background: rgba(#000, .5);
+    font-size: 1.5em;
+    line-height: 2;
+  }
+  &__price {
+    background: rgba(#000, .15);
+    line-height: 3;
+    font-size: 2em;
+  }
+  &__feature {
+    line-height: 3;
+    font-size: .9em;
+  }
+  &__buy {
+    font-size: 1.5em;
+    line-height: 3;
+  }
+}

@@ -1,8 +1,25 @@
-extends templates/template
-
-block content
-  header#header
-    include blocks/header
-    include blocks/banner
-  section#services
-    include blocks/services
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    script(src="//code.jquery.com/jquery-1.11.3.min.js")
+    script(src="js/scripts.js")
+    link(rel="stylesheet", href="css/estilos.css")
+    title
+  body
+    header#header
+      .main-header
+        include blocks/header
+      .main-banner
+        include blocks/banner
+    section#services.diagonal.diagonal--izquierda
+      include blocks/services
+    section
+      include blocks/division1
+    section#portfolio.diagonal.diagonal--derecha
+      include blocks/portfolio
+    section
+      include blocks/division1
+    section#pricing.diagonal.diagonal--izquierda
+      include blocks/pricing

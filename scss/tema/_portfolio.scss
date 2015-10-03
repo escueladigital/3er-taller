@@ -1,0 +1,31 @@
+#portfolio {
+  background: $celeste;
+  &:after {
+    background: $celeste;
+  }
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  a {
+    display: block;
+    color: #fff;
+    margin: .3em .5em;
+    padding: 0 .5em;
+    line-height: 2;
+    border: 1px solid rgba(#fff,.3);
+    &:hover {
+      background: rgba(#000, .2);
+      border: none;
+    }
+  }
+}
+
+.gallery {
+  @include grid(gallery-item,2);
+  @include desde(web){
+    @include grid(gallery-item,3);
+  }
+}
